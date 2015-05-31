@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.example.com/oai-pmh-gateway/xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2015-06-12T09:56:10Z</responseDate>
+  <request verb="ListRecords" metadataPrefix="oai_dc">http://www.example.com/gateway/www.openarchives.org/StaticRepositoryExample.xml</request>
+  <ListRecords>
+    <record>
+            <header>
+                <identifier>oai:arXiv:cs/0112017</identifier>
+                <datestamp>2001-12-14</datestamp>
+            </header>
+            <metadata>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/                     http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>Using Structural Metadata to Localize Experience of
+                        Digital Content</dc:title>
+                    <dc:creator>Dushay, Naomi</dc:creator>
+                    <dc:subject>Digital Libraries</dc:subject>
+                    <dc:description>With the increasing technical sophistication of
+                        both information consumers and providers, there is
+                        increasing demand for more meaningful experiences of digital
+                        information. We present a framework that separates digital
+                        object experience, or rendering, from digital object storage
+                        and manipulation, so the rendering can be tailored to
+                        particular communities of users.
+                    </dc:description>
+                    <dc:description>Comment: 23 pages including 2 appendices,
+                        8 figures</dc:description>
+                    <dc:date>2001-12-14</dc:date>
+                </oai_dc:dc>
+            </metadata>
+        </record>
+    <record>
+            <header>
+                <identifier>oai:perseus:Perseus:text:1999.02.0084</identifier>
+                <datestamp>2002-05-01</datestamp>
+            </header>
+            <metadata>
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/                     http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>Germany and its Tribes</dc:title>
+                    <dc:creator>Tacitus</dc:creator>
+                    <dc:type>text</dc:type>
+                    <dc:source>Complete Works of Tacitus. Tacitus. Alfred John Church.
+                        William Jackson Brodribb. Lisa Cerrato. edited for Perseus.
+                        New York: Random House, Inc. Random House, Inc. reprinted 1942.
+                    </dc:source>
+                    <dc:identifier>http://www.perseus.tufts.edu/cgi-bin/ptext?
+                        doc=Perseus:text:1999.02.0083</dc:identifier>
+                </oai_dc:dc>
+            </metadata>
+        </record>
+  </ListRecords>
+</OAI-PMH>

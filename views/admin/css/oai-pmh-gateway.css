@@ -1,0 +1,91 @@
+.oai-pmh-gateways-list {
+  padding: 0;
+  margin: 0;
+}
+.oai-pmh-gateways-list li {
+    list-style: none outside none;
+    padding-left: 10px;
+    display: inline-block;
+    font-family: "Arvo",serif;
+    margin: 0;
+    padding: 4px 4px 4px 4px;
+}
+a.oai-pmh-gateway.public,
+a.oai-pmh-gateway.status,
+a.oai-pmh-gateway.friend {
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    position:relative;
+}
+a.oai-pmh-gateway.toggle-status.initiated {
+    background: url('../../../../../application/views/scripts/images/silk-icons/tick.png') no-repeat scroll 0 0 transparent;
+}
+a.oai-pmh-gateway.toggle-status.terminated {
+    background: url('../../../../../application/views/scripts/images/silk-icons/cancel.png') no-repeat scroll 0 0 transparent;
+}
+a.oai-pmh-gateway.toggle-public.true,
+a.oai-pmh-gateway.toggle-friend.true {
+    background: url('../../../../../application/views/scripts/images/silk-icons/tick.png') no-repeat scroll 0 0 transparent;
+}
+a.oai-pmh-gateway.toggle-public.false,
+a.oai-pmh-gateway.toggle-friend.false {
+    background: url('../../../../../application/views/scripts/images/silk-icons/delete.png') no-repeat scroll 0 0 transparent;
+}
+a.oai-pmh-gateway.toggle-public.undefined,
+a.oai-pmh-gateway.toggle-friend.undefined {
+    background: url('../../../../../application/views/scripts/images/silk-icons/error.png') no-repeat scroll 0 0 transparent;
+}
+a.oai-pmh-gateway.transmit {
+    background: url('../../shared/images/waiting-mini.gif') no-repeat scroll 0 0 transparent !important;
+}
+.action {
+    color: #338899;
+    cursor: pointer;
+}
+
+.harvest-status .status {
+    /*    cursor: pointer; */
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    position:relative;
+}
+.harvest-full-status,
+.harvest-prefix {
+    font-style: italic;
+    text-align: right;
+}
+.status.added {
+    background: url('../../../../../application/views/scripts/images/silk-icons/error_add.png') no-repeat scroll 0 0 transparent;
+}
+.status.reset {
+    background: url('../../../../../application/views/scripts/images/silk-icons/exclamation.png') no-repeat scroll 0 0 transparent;
+}
+.status.queued,
+.status.progress {
+    background: url('../../../../../application/views/scripts/images/silk-icons/error_go.png') no-repeat scroll 0 0 transparent;
+}
+.status.paused {
+    background: url('../../../../../application/views/scripts/images/silk-icons/time.png') no-repeat scroll 0 0 transparent;
+}
+.status.stopped,
+.status.killed {
+    background: url('../../../../../application/views/scripts/images/silk-icons/error.png') no-repeat scroll 0 0 transparent;
+}
+.status.completed {
+    background: url('../../../../../application/views/scripts/images/silk-icons/tick.png') no-repeat scroll 0 0 transparent;
+}
+.status.deleted {
+    background: url('../../../../../application/views/scripts/images/silk-icons/delete.png') no-repeat scroll 0 0 transparent;
+}
+.status.error {
+    background: url('../../../../../application/views/scripts/images/silk-icons/cancel.png') no-repeat scroll 0 0 transparent;
+}
+
+.oai-pmh-gateway-action a.button.small {
+    height: auto;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.example.com/oai-pmh-gateway/xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2015-06-12T09:56:10Z</responseDate>
+  <request verb="Identify">http://www.example.com/gateway/www.openarchives.org/StaticRepositoryExample.xml</request>
+  <Identify>
+        <repositoryName>Demo repository</repositoryName>
+        <baseURL>http://gateway.institution.org/oai/an.oai.org/ma/mini.xml</baseURL>
+        <protocolVersion>2.0</protocolVersion>
+        <adminEmail>jondoe@oai.org</adminEmail>
+        <earliestDatestamp>2002-09-19</earliestDatestamp>
+        <deletedRecord>no</deletedRecord>
+        <granularity>YYYY-MM-DD</granularity>
+        <description>
+      <friends xmlns="http://www.openarchives.org/OAI/2.0/friends/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/ http://www.openarchives.org/OAI/2.0/friends.xsd">
+        <baseURL>http://www.example.com/gateway/www.openarchives.org/StaticRepositoryExample.xml</baseURL>
+      </friends>
+    </description>
+    <description>
+      <gateway xmlns="http://www.openarchives.org/OAI/2.0/gateway/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/gateway/ http://www.openarchives.org/OAI/2.0/gateway.xsd">
+        <source>http://www.openarchives.org/StaticRepositoryExample.xml</source>
+        <gatewayDescription>http://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm</gatewayDescription>
+        <gatewayAdmin>foobar@example.com</gatewayAdmin>
+        <gatewayURL>http://www.example.com/gateway</gatewayURL>
+        <gatewayNotes>http://www.example.com/oai-pmh-gateway/policy</gatewayNotes>
+      </gateway>
+    </description>
+    <description>
+      <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+        <scheme>oai</scheme>
+        <repositoryIdentifier>www.openarchives.org</repositoryIdentifier>
+        <delimiter>:</delimiter>
+        <sampleIdentifier>oai:arXiv:cs/0112017</sampleIdentifier>
+      </oai-identifier>
+    </description>
+  </Identify>
+</OAI-PMH>

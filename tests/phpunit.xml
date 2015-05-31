@@ -1,0 +1,9 @@
+<phpunit bootstrap="bootstrap.php"
+         convertErrorsToExceptions="true"
+         convertWarningsToExceptions="true">
+    <testsuites>
+        <testsuite name="OAI-PMH Gateway Tests">
+            <directory>suite</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
