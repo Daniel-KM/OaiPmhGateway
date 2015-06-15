@@ -7,10 +7,10 @@ standard [OAI-PMH static repository] through Omeka used as a gateway.
 [OAI-PMH] of the [Open Archives] organization. So with this plugin, any OAI-PMH
 harvester can harvest a static repository exposed by Omeka.
 
-Such a repository is a simple xml file that can be built with any editor. The
-build process can be automated with the plugin [Archive Folder], that transforms
-any local or remote directory of files and/or metadata files into a standard
-static repository.
+Such a static repository is a simple xml file that can be built with any editor.
+The build process can be automated with the plugin [Archive Folder], that
+transforms any local or remote directory of files and/or metadata files into a
+standard static repository.
 
 So, to try it quickly, install [OAI-PMH Repository], [OAI-PMH Harvester], [OAI-PMH Gateway],
 and [Archive Folder] and follow the instructions in the [readme of Archive Folder].

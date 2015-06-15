@@ -28,23 +28,20 @@ class OaiPmhGateway_XslController extends Omeka_Controller_AbstractActionControl
         $xml = simplexml_load_file($stylesheet);
         $xml->registerXPathNamespace('xsl', 'http://www.w3.org/1999/XSL/Transform');
         foreach (array(
-                WEB_ROOT => "/xsl:stylesheet/xsl:param[@name = 'homepage']",
-                absolute_url(array(), 'oaipmhgateway_url') => "/xsl:stylesheet/xsl:param[@name = 'gateway']",
-                "/xsl:stylesheet/xsl:param[@name = 'css-bootstrap']",
-                "/xsl:stylesheet/xsl:param[@name = 'css-bootstrap-theme']",
-                "/xsl:stylesheet/xsl:param[@name = 'css-oai-pmh-repository']",
-                "/xsl:stylesheet/xsl:param[@name = 'javascript-jquery']",
-                "/xsl:stylesheet/xsl:param[@name = 'javascript-bootstrap']",
-            ) as $replace => $xpath) {
+                "/xsl:stylesheet/xsl:param[@name = 'homepage-url']" => get_option('oaipmh_gateway_url'),
+                "/xsl:stylesheet/xsl:param[@name = 'homepage-text']" => __('OAI-PMH Gateway for Static Repositories'),
+                "/xsl:stylesheet/xsl:param[@name = 'gateway-url']" => absolute_url(array(), 'oaipmhgateway_url'),
+                "/xsl:stylesheet/xsl:param[@name = 'css-bootstrap']" => null,
+                "/xsl:stylesheet/xsl:param[@name = 'css-bootstrap-theme']" => null,
+                "/xsl:stylesheet/xsl:param[@name = 'css-oai-pmh-repository']" => null,
+                "/xsl:stylesheet/xsl:param[@name = 'javascript-jquery']" => null,
+                "/xsl:stylesheet/xsl:param[@name = 'javascript-bootstrap']" => null,
+            ) as $xpath => $replace) {
             $params = $xml->xpath($xpath);
             if (isset($params[0]['select'])) {
                 $param = $params[0];
-                if (is_string($replace)) {
-                    $paramDom = dom_import_simplexml($param);
-                    $paramDom->setAttribute('select', "'" . $replace . "'");
-                }
                 // The url should be checked before update.
-                else {
+                if (is_null($replace)) {
                     $url = (string) $param['select'];
                     $url = trim($url, "'");
                     if (strpos($url, 'http://') !== 0 && strpos($url, 'https://') !== 0 && strpos($url, '/') !== 0) {
@@ -52,6 +49,11 @@ class OaiPmhGateway_XslController extends Omeka_Controller_AbstractActionControl
                         $paramDom = dom_import_simplexml($param);
                         $paramDom->setAttribute('select', "'" . $absoluteUrl . "'");
                     }
+                }
+                // Use the provided text.
+                else {
+                    $paramDom = dom_import_simplexml($param);
+                    $paramDom->setAttribute('select', "'" . $replace . "'");
                 }
             }
         }
