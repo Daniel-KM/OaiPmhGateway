@@ -145,16 +145,17 @@ class OaiPmhGatewayPlugin extends Omeka_Plugin_AbstractPlugin
     public function hookConfig($args)
     {
         $post = $args['post'];
-        foreach (array(
-                'oaipmh_gateway_allow_roles',
-            ) as $posted) {
-            $post[$posted] = isset($post[$posted])
-                ? serialize($post[$posted])
-                : serialize(array());
+        foreach ($this->_options as $optionKey => $optionValue) {
+            if (in_array($optionKey, array(
+                    'oaipmh_gateway_allow_roles',
+                ))) {
+               $post[$optionKey] = serialize($post[$optionKey]) ?: serialize(array());
+            }
+            if (isset($post[$optionKey])) {
+                set_option($optionKey, $post[$optionKey]);
+            }
         }
-        foreach ($post as $key => $value) {
-            set_option($key, $value);
-        }
+
     }
 
     /**
