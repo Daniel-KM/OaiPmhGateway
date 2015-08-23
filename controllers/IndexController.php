@@ -170,6 +170,7 @@ class OaiPmhGateway_IndexController extends Omeka_Controller_AbstractActionContr
     {
         $singularName = $this->view->singularize($this->_helper->db->getDefaultModelName());
         $record = $this->_helper->db->findById();
+
         if ($record) {
             $record->check();
         }

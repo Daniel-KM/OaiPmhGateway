@@ -549,6 +549,10 @@ class OaiPmhGateway extends Omeka_Record_AbstractRecord implements Zend_Acl_Reso
                         }
                     }
                     if (!empty($errors)) {
+                        foreach ($errors as $error) {
+                            _log(__('[OaiPmhGateway] Could not parse XML: file %s (line %d, column %d), code %d: %s',
+                            $error->file, $error->code, $error->line, $error->column, $error->message));
+                        }
                         $result = false;
                         break;
                     }
