@@ -508,7 +508,7 @@ class OaiPmhGateway extends Omeka_Record_AbstractRecord implements Zend_Acl_Reso
             return true;
         }
 
-        return _validateXml($xmlpath);
+        return $this->_validateXml($xmlpath);
     }
 
     /**
