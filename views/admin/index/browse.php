@@ -35,7 +35,7 @@ echo head(array(
         </div>
         <?php echo common('quick-filters'); ?>
         <div class="pagination"><?php echo $paginationLinks = pagination_links(); ?></div>
-        <table id="oai-pmh-gateways" cellspacing="0" cellpadding="0">
+        <table id="oai-pmh-gateways">
             <thead>
                 <tr>
                     <?php if (is_allowed('OaiPmhGateway_Index', 'edit')): ?>
@@ -68,7 +68,7 @@ echo head(array(
                     <td><?php
                         echo common('gateway-status', array('gateway' => $gateway));
                         if (plugin_is_active('OaipmhHarvester')): ?>
-                        <p>
+                        <div>
                             <em><?php echo __('Harvester:'); ?></em>
                             <div>
                             <?php
@@ -86,7 +86,7 @@ echo head(array(
                                 </div>
                             <?php endif; ?>
                             </div>
-                        </p>
+                        </div>
                         <?php endif; ?>
                     </td>
                     <td><?php echo common('gateway-friend', array('gateway' => $gateway)); ?></td>

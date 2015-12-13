@@ -445,10 +445,14 @@ class OaiPmhGateway_ResponseGenerator extends OaiPmhRepository_OaiXmlGeneratorAb
         $fromDate = null;
         $untilDate = null;
 
-        if(($from = $this->_getParam('from')))
+        $from = $this->_getParam('from');
+        if ($from) {
             $fromDate = OaiPmhRepository_Date::utcToDb($from);
-        if(($until= $this->_getParam('until')))
+        }
+        $until = $this->_getParam('until');
+        if ($until) {
             $untilDate = OaiPmhRepository_Date::utcToDb($until, true);
+        }
 
         $this->listResponse($verb,
                                 $this->query['metadataPrefix'],

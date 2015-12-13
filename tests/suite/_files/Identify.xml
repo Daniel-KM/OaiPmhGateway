@@ -30,7 +30,7 @@
         <scheme>oai</scheme>
         <repositoryIdentifier>www.openarchives.org</repositoryIdentifier>
         <delimiter>:</delimiter>
-        <sampleIdentifier>oai:arXiv:cs/0112017</sampleIdentifier>
+        <sampleIdentifier>oai:arXiv.cs:0112017</sampleIdentifier>
       </oai-identifier>
     </description>
   </Identify>
