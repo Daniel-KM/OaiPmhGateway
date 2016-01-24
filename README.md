@@ -8,12 +8,12 @@ standard [OAI-PMH static repository] through Omeka used as a gateway.
 harvester can harvest a static repository exposed by Omeka.
 
 Such a static repository is a simple xml file that can be built with any editor.
-The build process can be automated with the plugin [Archive Folder], that
+The build process can be automated with the plugin [OAI-PMH Static Repository], that
 transforms any local or remote directory of files and/or metadata files into a
 standard static repository.
 
 So, to try it quickly, install [OAI-PMH Repository], [OAI-PMH Harvester], [OAI-PMH Gateway],
-and [Archive Folder] and follow the instructions in the [readme of Archive Folder].
+and [OAI-PMH Static Repository] and follow the instructions in the [readme of OAI-PMH Static Repository].
 You can use the included official example too.
 
 
@@ -64,7 +64,7 @@ Note: the official [OAI-PMH Repository] has been completed in an [improved fork]
 in particular with a human interface, and until merge of the commits, the latter
 is recommended.
 
-You can install [OAI-PMH Harvester] too, specially if you use [Archive Folder]
+You can install [OAI-PMH Harvester] too, specially if you use [OAI-PMH Static Repository]
 to ingest files and/or metadata.
 
 Note: the official [OAI-PMH Harvester] can only ingest standard metadata
@@ -146,10 +146,10 @@ Copyright
 [OAI-PMH static repository]: http://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm
 [OAI-PMH]: https://www.openarchives.org/OAI/2.0/openarchivesprotocol.htm
 [Open Archives]: https://www.openarchives.org
-[Archive Folder]: https://github.com/Daniel-KM/ArchiveFolder
+[OAI-PMH Static Repository]: https://github.com/Daniel-KM/OaiPmhStaticRepository
 [OAI-PMH Repository]: https://omeka.org/add-ons/plugins/oai-pmh-repository
 [OAI-PMH Harvester]: https://omeka.org/add-ons/plugins/oai-pmh-harvester
-[readme of Archive Folder]: https://github.com/Daniel-KM/ArchiveFolder
+[readme of OAI-PMH Static Repository]: https://github.com/Daniel-KM/OaiPmhStaticRepository
 [OAI-PMH Confederated Repositories]: https://www.openarchives.org/OAI/2.0/guidelines-friends.htm
 [improved fork]: https://github.com/Daniel-KM/OaiPmhRepository
 [fork]: https://github.com/Daniel-KM/OaipmhHarvester

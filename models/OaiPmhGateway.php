@@ -672,7 +672,7 @@ class OaiPmhGateway extends Omeka_Record_AbstractRecord implements Zend_Acl_Reso
      * Get the full filepath of the internal cache.
      *
      * @todo Don't cache internal repositories, in particular those created with
-     * ArchiveFolder.
+     * OAI-PMH Static Repository.
      */
     public function getCachePath()
     {
@@ -723,6 +723,6 @@ class OaiPmhGateway extends Omeka_Record_AbstractRecord implements Zend_Acl_Reso
 
     public function getResourceId()
     {
-        return 'OaiPmhGateway';
+        return 'OaiPmhGateways';
     }
 }

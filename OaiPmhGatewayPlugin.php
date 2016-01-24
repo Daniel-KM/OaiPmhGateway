@@ -72,7 +72,7 @@ class OaiPmhGatewayPlugin extends Omeka_Plugin_AbstractPlugin
             `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
             `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
             `public` tinyint(4) NOT NULL DEFAULT '1',
-            `status` enum('initiated', 'terminated') NOT NULL DEFAULT 'initiated',
+            `status` enum('initiated', 'terminated') NOT NULL,
             `friend` tinyint(1) NOT NULL DEFAULT '1',
             `cachefile` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
             `owner_id` int unsigned NOT NULL DEFAULT '0',
@@ -113,7 +113,7 @@ class OaiPmhGatewayPlugin extends Omeka_Plugin_AbstractPlugin
         // Remove the cache folder.
         $path = get_option('oaipmh_gateway_cache_dir');
         array_map('unlink', glob($path . '*'));
-        rmdir($path);
+        @rmdir($path);
 
         $this->_uninstallOptions();
     }

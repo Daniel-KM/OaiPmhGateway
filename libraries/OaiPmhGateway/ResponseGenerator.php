@@ -729,7 +729,7 @@ class OaiPmhGateway_ResponseGenerator extends OaiPmhRepository_OaiXmlGeneratorAb
     /**
      * Get the xml content of a record for the specified prefix.
      *
-     * @see ArchiveFolder_Builder::_getRecord()
+     * @see OaiPmhStaticRepository_Builder::_getRecord()
      *
      * @param string $identifier
      * @param string $prefix
