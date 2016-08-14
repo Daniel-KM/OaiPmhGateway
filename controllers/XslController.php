@@ -25,7 +25,7 @@ class OaiPmhGateway_XslController extends Omeka_Controller_AbstractActionControl
         $uri = explode('?', $this->getRequest()->getRequestUri());
         $uri = $uri[0];
 
-        $xml = simplexml_load_file($stylesheet);
+        $xml = simplexml_load_file($stylesheet, 'SimpleXMLElement', LIBXML_NOENT | LIBXML_XINCLUDE | LIBXML_PARSEHUGE);
         $xml->registerXPathNamespace('xsl', 'http://www.w3.org/1999/XSL/Transform');
         foreach (array(
                 "/xsl:stylesheet/xsl:param[@name = 'homepage-url']" => get_option('oaipmh_gateway_url'),
