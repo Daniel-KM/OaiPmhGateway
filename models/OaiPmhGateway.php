@@ -311,7 +311,7 @@ class OaiPmhGateway extends Omeka_Record_AbstractRecord implements Zend_Acl_Reso
      *
      * @param array $args
      */
-    protected function afterDelete($args)
+    protected function afterDelete()
     {
         $path = $this->getCachePath();
         if (is_file($path)) {
