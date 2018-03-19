@@ -141,19 +141,19 @@ Copyright
 * Copyright Daniel Berthereau, 2015
 
 
-[OAI-PMH Gateway]: https://github.com/Daniel-KM/OaiPmhGateway
+[OAI-PMH Gateway]: https://github.com/Daniel-KM/Omeka-plugin-OaiPmhGateway
 [Omeka]: https://omeka.org
 [OAI-PMH static repository]: http://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm
 [OAI-PMH]: https://www.openarchives.org/OAI/2.0/openarchivesprotocol.htm
 [Open Archives]: https://www.openarchives.org
-[OAI-PMH Static Repository]: https://github.com/Daniel-KM/OaiPmhStaticRepository
+[OAI-PMH Static Repository]: https://github.com/Daniel-KM/Omeka-plugin-OaiPmhStaticRepository
 [OAI-PMH Repository]: https://omeka.org/add-ons/plugins/oai-pmh-repository
 [OAI-PMH Harvester]: https://omeka.org/add-ons/plugins/oai-pmh-harvester
-[readme of OAI-PMH Static Repository]: https://github.com/Daniel-KM/OaiPmhStaticRepository
+[readme of OAI-PMH Static Repository]: https://github.com/Daniel-KM/Omeka-plugin-OaiPmhStaticRepository
 [OAI-PMH Confederated Repositories]: https://www.openarchives.org/OAI/2.0/guidelines-friends.htm
-[improved fork]: https://github.com/Daniel-KM/OaiPmhRepository
-[fork]: https://github.com/Daniel-KM/OaipmhHarvester
-[plugin issues]: https://github.com/Daniel-KM/OaiPmhGateway/issues
+[improved fork]: https://github.com/Daniel-KM/Omeka-plugin-OaiPmhRepository
+[fork]: https://github.com/Daniel-KM/Omeka-plugin-OaipmhHarvester
+[plugin issues]: https://github.com/Daniel-KM/Omeka-plugin-OaiPmhGateway/issues
 [CeCILL v2.1]: https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
 [FSF]: https://www.fsf.org

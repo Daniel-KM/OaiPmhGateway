@@ -47,7 +47,7 @@ class OaiPmhGatewayPlugin extends Omeka_Plugin_AbstractPlugin
         'oaipmh_gateway_identify_friends' => true,
         'oaipmh_gateway_notes_url' => '',
         'oaipmh_gateway_notes' => '<p>This gateway is an <a href="https://www.openarchives.org/OAI/2.0/openarchivesprotocol.htm" target="_blank">OAI-PMH</a> data provider for&nbsp;<a href="https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm" target="_blank">static repositories</a>.</p>
-<p>It is available through the floss plugin <a href="https://github.com/Daniel-KM/OaiPmhGateway">OAI-PMH Gateway</a> for <a href="https://omeka.org">Omeka</a>.</p>
+<p>It is available through the floss plugin <a href="https://github.com/Daniel-KM/Omeka-plugin-OaiPmhGateway">OAI-PMH Gateway</a> for <a href="https://omeka.org">Omeka</a>.</p>
 <p>Feel free to use it and to initiate new repositories!</p>',
         'oaipmh_gateway_check_xml' => true,
         // With roles, in particular if Guest User is installed.
